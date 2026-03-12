@@ -1,36 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>PASAJEROS A MONTERO</title>
-    <link rel="stylesheet" href="css/global.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
     <header id="menu">
-        <img src="img/logoX.png" alt="Logo">
-        <div>
-            <button>Menu</button>
-            <button>Flota</button>
-            <button>Viajes</button>
-        </div>
+      <img src="img/logoX.png" alt="Logo" class="logo-izquierda" />
+
+      <div class="botones-derecha">
+        <button>Menu</button>
+        <button>Flota</button>
+        <button>Viajes</button>
+      </div>
+      <div style="clear: both"></div>
     </header>
     <main>
-        <div>
-            <h1>MENU</h1>
-            <div>
-                <h2>Placa</h2>
-                <h2>Chofer</h2>
-                <h2>Destino</h2>
-            </div>
-            <div id="dinamic"></div>
+      <div>
+        <h1>MENU</h1>
+        <div class="header_din">
+          <h2>Placa</h2>
+          <h2>Chofer</h2>
+          <h2>Destino</h2>
         </div>
-        <div id="btns">
-            <label>Fecha:</label>
-            <input type="date" id="fecha">
-            <button id="buscar">Buscar</button>
-        </div>
+        <div id="dinamic"></div>
+      </div>
+      <div id="btns">
+        <label>Fecha:</label>
+        <input type="date" id="fecha" />
+        <button id="buscar">Buscar</button>
+      </div>
     </main>
 
     <script src="js/menu.js"></script>
-</body>
+  </body>
 </html>

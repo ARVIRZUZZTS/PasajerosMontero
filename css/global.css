@@ -1,141 +1,223 @@
 /*------------FORMATO------------*/
-body {
-   /* background: repeating-linear-gradient(
-        0deg,
-        rgba(255,255,255,0.03),
-        rgba(255,255,255,0.03) 1px,
-        transparent 1px,
-        transparent 2px
-    ),
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-font-family: Georgia, 'Times New Roman', Times, serif;
-    linear-gradient(to right, #434343, #000000);*/
-    background: linear-gradient(135deg,rgb(244, 255, 244),rgb(139, 182, 139));
-    color: rgb(6, 46, 6);
-    margin: 0;
-    height: 100vh !important;
-    width: 100% !important;
-    text-align: center;
-}
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(139, 182, 139);
+  background: -webkit-linear-gradient(
+    top left,
+    rgb(244, 255, 244),
+    rgb(139, 182, 139)
+  );
+  background: linear-gradient(135deg, rgb(244, 255, 244), rgb(139, 182, 139));
+  color: rgb(6, 46, 6);
+  height: 32em;
+  width: 100%;
+  display: -moz-box;
+  -moz-box-orient: vertical;
 }
 
 header {
-    position: relative;
-    z-index: 5;
-    height: 15vh;
-    background-color: rgb(148, 197, 148);
-    box-shadow: 0px 10px 10px 0px rgb(6, 46, 6);;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0vh 5vh;
+  position: relative;
+  z-index: 5;
+  height: 110px;
+  background-color: rgb(148, 197, 148);
+  -webkit-box-shadow: 0px 10px 10px 0px rgb(6, 46, 6);
+  box-shadow: 0px 10px 10px 0px rgb(6, 46, 6);
+  display: block;
+  padding: 0 5%;
+  overflow: hidden;
 }
+
 header img {
-    height: 15vh;
+  height: 100%;
+  float: left;
 }
+
 nav {
-    position: relative;
-    z-index: 4;
-    display: flex;
-    padding-left: 5vh;
-    padding-top: 3vh;
-    padding-bottom: 1vh;
-    background-color: rgb(179, 250, 179);
-    box-shadow: 0px 5px 5px 0px rgb(6, 46, 6);
-    gap: 2vh;
-} 
+  position: relative;
+  z-index: 4;
+  display: block;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  background-color: rgb(179, 250, 179);
+  -webkit-box-shadow: 0px 5px 5px 0px rgb(6, 46, 6);
+  box-shadow: 0px 5px 5px 0px rgb(6, 46, 6);
+  overflow: hidden;
+}
+
 nav button {
-    background-color: transparent;
-    border: 1px solid rgb(0, 71, 0);
-    border-left: 6px solid rgb(0, 71, 0);
-    color: rgb(0, 71, 0);
+  background-color: transparent;
+  border: 1px solid rgb(0, 71, 0);
+  border-left: 6px solid rgb(0, 71, 0);
+  color: rgb(0, 71, 0);
+  float: left;
+  margin-right: 2%;
 }
+
 nav button:hover {
-    background-color: rgb(199, 236, 199);
+  background-color: rgb(199, 236, 199);
 }
+
 main {
-    position: relative;
-    display: flex;
-    height: 70%;
-    align-items: center;
-    justify-content: center;
+  background: red;
+  display: -moz-box;
+  height: 100%;
+  width: 90%;
+  padding-top: 10%;
 }
+
 /*------------ELEMENTOS HTML------------*/
-    /*------------TITULOS------------*/
-h1,h2,h3,h4,h5,h6,p {
-    margin: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
 }
-h1 { font-size: 5vh;}
-h2 { font-size: 4vh;}
-h3 { font-size: 3.5vh;}
-h4 { font-size: 3vh;}
-h5 { font-size: 2.5vh;}
-h6 { font-size: 2vh;}
-p { font-size: 2.5vh;}
-    /*------------BOTONES------------*/
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+p {
+  font-size: 1.2em;
+}
+
+/*------------BOTONES------------*/
 button {
-    text-align: center;
-    min-height: 5vh;
-    cursor: pointer;
-    transition: 200ms;
-    border-radius: 5px;
-    color: rgb(0, 71, 0);
-    font-size: 2.5vh;
-    background-color: rgb(166, 221, 166);
-    border: solid 2px rgb(0, 71, 0);
+  text-align: center;
+  min-height: 40px;
+  cursor: pointer;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  border-radius: 5px;
+  color: rgb(0, 71, 0);
+  font-size: 1.2em;
+  background-color: rgb(166, 221, 166);
+  border: solid 2px rgb(0, 71, 0);
 }
+
 button:hover {
-    box-shadow: 0px 0px 15px 5px rgba(6, 46, 6, 0.5);
-    transform: translateY(-2px);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(6, 46, 6, 0.5);
+  box-shadow: 0px 0px 15px 5px rgba(6, 46, 6, 0.5);
 }
+
 .negative {
-    background-color: rgb(161, 245, 161);
-    color: rgb(3, 32, 3);
+  background-color: rgb(161, 245, 161);
+  color: rgb(3, 32, 3);
 }
-    /*------------INPUT------------*/
+
+/*------------INPUT------------*/
 input {
-    padding: 1vh;
-    border: solid 2px rgb(21, 100, 21);
-    outline: rgb(0, 215, 0);
-    border-radius: 5px;
-    font-size: 2.5vh;
+  padding: 10px;
+  border: solid 2px rgb(21, 100, 21);
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
+
 input:active {
-    background-color: rgb(192, 255, 192);
-    box-shadow: 5px 0px 20px rgb(0, 26, 0);
+  background-color: rgb(192, 255, 192);
+  -webkit-box-shadow: 5px 0px 20px rgb(0, 26, 0);
+  box-shadow: 5px 0px 20px rgb(0, 26, 0);
 }
-    /*------------SELECT------------*/
+
+/*------------SELECT------------*/
 select {
-    border-radius: 5px;
-    height: 5vh;
-    font-size: 2.5vh;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.2em;
 }
 
 select option {
-    background-color: rgb(197, 255, 197);
-    color: black;
-    border-radius: 5px;
+  background-color: rgb(197, 255, 197);
+  color: black;
 }
 
-select option:checked {
-    background-color: rgb(90, 207, 90);
-    color: white;
-}
-    /*------------TEXTAREA------------*/
+/*------------TEXTAREA------------*/
 textarea {
-    padding: 1vh;
-    border: solid 2px rgb(21, 100, 21);
-    border-radius: 5px;
-    outline: none;
-    resize: none;
-    font-size: 2.5vh;
-    
-    height: min-content;
+  padding: 10px;
+  border: solid 2px rgb(21, 100, 21);
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  font-size: 1.2em;
+  height: auto;
 }
-/*------------ELEMENTOS HTML------------*/
-/*------------ELEMENTOS HTML------------*/
+
+/* Fix para limpiar flotados al final de los contenedores */
+header:after,
+nav:after,
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo-izquierda {
+  float: left;
+  height: 100%;
+  width: 40%;
+  display: block;
+}
+
+.logo-izquierda img {
+  height: 80%;
+  margin-top: 5%;
+}
+
+.botones-derecha {
+  float: right;
+  height: 100%;
+  width: 50%;
+  text-align: right;
+}
+
+.botones-derecha button {
+  height: 75%;
+  width: 28%;
+  margin: 5px 1%;
+  margin-top: 15px;
+
+  display: block;
+  float: left;
+
+  padding: 0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.header_din {
+  background-color: aquamarine;
+  display: -moz-box;
+  padding: 0.5em;
+  width: min-content;
+}
+
+/* .header_din h2 {
+  display: block;
+  float: left;
+  text-align: center;
+} */
