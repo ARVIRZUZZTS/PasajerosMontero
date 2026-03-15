@@ -28,11 +28,23 @@
       </div>
       <div id="btns">
         <label>Fecha:</label>
-        <input type="date" id="fecha" />
+        <divc id="contenedor-fechas"></div>
         <button id="buscar">Buscar</button>
       </div>
     </main>
 
     <script src="js/menu.js"></script>
+    <script src="js/components/componente_fecha.js"></script>
+
+    <script>
+      window.onload = function () {
+        SelectorFecha.renderizar("contenedor-fechas");
+
+        document.getElementById("buscar").onclick = function () {
+          var fechaLista = SelectorFecha.obtenerFechaFormateada();
+          alert("La fecha seleccionada es: " + fechaLista);
+        };
+      };
+    </script>
   </body>
 </html>
