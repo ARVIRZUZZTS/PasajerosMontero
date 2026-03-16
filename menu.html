@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <title>PASAJEROS A MONTERO</title>
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <header id="menu">
       <img src="img/logoX.png" alt="Logo" class="logo-izquierda" />
 
-      <div class="botones-derecha">
+      <div class="botones-derecha-nav">
         <button onclick="goMenu()">Menu</button>
         <button onclick="goFlotas()">Flota</button>
         <button onclick="goViajes()">Viajes</button>
@@ -17,19 +18,22 @@
       <div style="clear: both"></div>
     </header>
     <main>
-      <div>
-        <h1>MENU</h1>
-        <div class="header_din">
-          <h2>PLACA</h2>
-          <h2>CHOFER</h2>
-          <h2>DESTINO</h2>
+      <h1>MENU</h1>
+      <div  class="main-menu">
+        <div>
+
+          <div class="header_din">
+            <h2>PLACA</h2>
+            <h2>CHOFER</h2>
+            <h2>DESTINO</h2>
+          </div>
+          <div id="dinamic"></div>
         </div>
-        <div id="dinamic"></div>
-      </div>
-      <div id="btns">
-        <label>Fecha:</label>
-        <divc id="contenedor-fechas"></div>
-        <button id="buscar">Buscar</button>
+        <div id="btns" class="filtro-fecha">
+          <label>Fecha:</label>
+          <divc id="contenedor-fechas"></div>
+          <button id="buscar">Buscar</button>
+        </div>
       </div>
     </main>
 

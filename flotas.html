@@ -1,39 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>FLOTAS</title>
-    <link rel="stylesheet" href="css/global.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
     <header id="menu">
-        <img src="img/logoX.png" alt="Logo">
-        <div>
-            <button onclick="goMenu()">Menu</button>
-            <button onclick="goFlotas()">Flota</button>
-            <button onclick="goViajes()">Viajes</button>
-        </div>
+      <img src="img/logoX.png" alt="Logo" />
+      <div class="botones-derecha-nav">
+        <button onclick="goMenu()">Menu</button>
+        <button onclick="goFlotas()">Flota</button>
+        <button onclick="goViajes()">Viajes</button>
+      </div>
     </header>
     <main>
+      <div>
+        <h1>FLOTAS</h1>
         <div>
-            <h1>FLOTAS</h1>
-            <div>
-                <h2>PLACA</h2>
-                <h2>CHOFER 1</h2>
-                <h2>LICENCIA 1</h2>
-                <h2>CHOFER 2</h2>
-                <h2>LICENCIA 2</h2>
-                <h2>ASIENTOS</h2>
-                <h2>TIPO</h2>
-            </div>
-            <div id="dinamic"></div>
+          <h2>PLACA</h2>
+          <h2>CHOFER 1</h2>
+          <h2>LICENCIA 1</h2>
+          <h2>CHOFER 2</h2>
+          <h2>LICENCIA 2</h2>
+          <h2>ASIENTOS</h2>
+          <h2>TIPO</h2>
         </div>
-        <div id="btns">
-            <button>Nueva Flota</button>
-            <button>Editar Flota</button>
-        </div>
+        <div id="dinamic"></div>
+      </div>
+      <div id="btns">
+        <button>Nueva Flota</button>
+        <button>Editar Flota</button>
+      </div>
     </main>
 
     <script src="js/flotas.js"></script>
-</body>
+  </body>
 </html>
