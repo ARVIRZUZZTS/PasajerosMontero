@@ -28,12 +28,25 @@
         </div>
         <div id="dinamic"></div>
       </div>
+      <div id="contenedor-fechas"></div>
       <div id="btns">
         <button>Nueva Flota</button>
+
         <button>Editar Flota</button>
       </div>
     </main>
 
     <script src="js/flotas.js"></script>
+    <script src="js/components/componente_fecha.js"></script>
+    <script>
+      window.onload = function () {
+        SelectorFecha.renderizar("contenedor-fechas");
+
+        document.getElementById("buscar").onclick = function () {
+          var fechaLista = SelectorFecha.obtenerFechaFormateada();
+          alert("La fecha seleccionada es: " + fechaLista);
+        };
+      };
+    </script>
   </body>
 </html>
