@@ -1,6 +1,6 @@
-create database PasajerosMontero;
+create database PasajeroMontero;
 
-use  pasaPasajerosMontero;
+use  pasaPasajeroMontero;
 
 create table flota (
 placa varchar(10)  primary key,

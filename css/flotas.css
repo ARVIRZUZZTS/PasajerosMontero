@@ -1,0 +1,97 @@
+/* Contenedor principal para dar márgenes internos */
+.contenedor-flotas {
+  padding: 2em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contenedor-flotas h1 {
+  margin-bottom: 20px;
+  color: #23a559; /* Título en verde para destacar */
+  border-bottom: 2px solid #2b2d31;
+  padding-bottom: 10px;
+}
+
+/* Cabecera de la tabla (Títulos) */
+.cabecera-tabla {
+  background-color: #111214;
+  padding: 12px 0;
+  border-radius: 5px 5px 0 0; /* Bordes redondeados solo arriba */
+  border: 2px solid #2b2d31;
+  border-bottom: none;
+  overflow: hidden; /* Limpia los flotados internos */
+}
+
+/* Dividimos las 7 columnas matemáticamente (100% / 7 = 14.28%) */
+.cabecera-tabla h2 {
+  float: left;
+  width: 14.28%;
+  text-align: center;
+  font-size: 1.1em;
+  color: #949ba4; /* Texto secundario para que no compita con los datos */
+}
+
+/* ================================================================
+   EL CONTENEDOR DINÁMICO (AQUÍ ESTÁ EL SCROLL)
+   ================================================================ */
+#dinamic {
+  background-color: #2b2d31;
+  height: 350px; /* Tamaño predeterminado. Cámbialo según necesites */
+  overflow-y: auto; /* Activa el scroll vertical si el contenido excede la altura */
+  border: 2px solid #2b2d31;
+  border-radius: 0 0 5px 5px; /* Bordes redondeados solo abajo */
+  /* Sombra interior para dar la sensación de profundidad (caja hundida) */
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Personalización del Scrollbar para navegadores WebKit (Chrome) */
+#dinamic::-webkit-scrollbar {
+  width: 10px;
+}
+#dinamic::-webkit-scrollbar-track {
+  background: #111214;
+  border-radius: 0 0 5px 0;
+}
+#dinamic::-webkit-scrollbar-thumb {
+  background: #949ba4;
+  border-radius: 5px;
+}
+#dinamic::-webkit-scrollbar-thumb:hover {
+  background: #23a559; /* La barra se vuelve verde al pasar el ratón */
+}
+
+/* ================================================================
+   FILAS DE DATOS (Generadas desde flotas.js)
+   ================================================================ */
+.flotasBox {
+  overflow: hidden; /* Limpia flotados */
+  padding: 12px 0;
+  border-bottom: 1px solid #111214; /* Separador sutil entre filas */
+}
+
+/* Efecto al pasar el ratón por encima de una fila */
+.flotasBox:hover {
+  background-color: #1e1f22;
+}
+
+.flotasBox h3 {
+  float: left;
+  width: 14.28%; /* Misma anchura que los títulos para que alineen perfecto */
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  color: #f2f3f5;
+}
+
+/* Contenedor de botones de acción inferiores */
+#btns {
+  margin-top: 20px;
+  text-align: right;
+  overflow: hidden;
+}
+
+#btns button {
+  margin-left: 10px;
+  display: inline-block;
+}
