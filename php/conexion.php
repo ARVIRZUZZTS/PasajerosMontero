@@ -1,6 +1,6 @@
 <?php
 
-$conexion = mysqli_connect("localhost","root","2004","pasajeromontero");
+$conexion = mysqli_connect("localhost","root","","pasajeromontero");
 # en el tercer "" colocar el puerto "3307"-Waka; ""-Arvi
 if(!$conexion){
     die("Error de conexión: " . mysqli_connect_error());

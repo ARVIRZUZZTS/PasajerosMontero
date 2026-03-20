@@ -63,7 +63,7 @@ function newViaje() {
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            alert(xhr.responseText);
+            window.location.href = "menu.html";
         }
     };
 
