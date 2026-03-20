@@ -34,13 +34,14 @@
           <div id="contenedor-fechas"></div>
           <div class="grupo-botones">
             <button id="buscar">Buscar</button>
-            <button id="new_travel">Crear viaje</button>
+            <button id="new_travel" onclick="goViajes()">Crear viaje</button>
           </div>
         </div>
       </div>
     </main>
 
     <script src="js/menu.js"></script>
+    <script src="js/linker.js"></script>
     <script src="js/components/componente_fecha.js"></script>
 
     <script>
@@ -48,8 +49,8 @@
         SelectorFecha.renderizar("contenedor-fechas");
 
         document.getElementById("buscar").onclick = function () {
-          var fechaLista = SelectorFecha.obtenerFechaFormateada();
-          alert("La fecha seleccionada es: " + fechaLista);
+          fecha = SelectorFecha.obtenerFechaFormateada();
+          alert("La fecha seleccionada es: " + fecha);
         };
       };
     </script>

@@ -13,6 +13,6 @@ INSERT INTO `flota`(`placa`, `chofer1`, `licencia1`, `chofer2`, `licencia2`, `as
 ('1580-EYR', 'JUAN QUISPE LLAMPAS', '4321568', '', '', 33, 'Semi-Cama' ),
 ('2130-YXG', 'JHONNY VARGAS', '6053938', '', '', 33, 'Semi-Cama'),
 ('2447-DKT', 'RICHAR IRUSTA JIMENEZ', '4560090', '', '', 33, 'Semi-Cama'),
-('2701-YNF', 'ARCENIO CABALLERO V.', '3567742', '', '', 33, 'Semi-Cama')
+('2701-YNF', 'ARCENIO CABALLERO V.', '3567742', '', '', 33, 'Semi-Cama'),
 ('2264-KGD', 'VICTOR HUGO VELARSCO CAERO', '4403658', '', '', 33, 'Semi-Cama'),
 ('2218-PCT', 'ALEX SANDRO VILLARROEL ROMERO', '4512363', '', '', 33, 'Semi-Cama')

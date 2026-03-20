@@ -1,13 +1,39 @@
 var fecha = getFecha();
 
-function goMenu() {
-    window.location.href = "menu.html";
-}
-function goFlotas() {
-    window.location.href = "flotas.html";
-}
-function goViajes() {
-    window.location.href = "viajes.html";
+document.addEventListener("DOMContentLoaded", function () {
+    loadViajes();
+});
+
+function loadViajes() {
+
+    var fecha = getFecha();
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "php/menu/viajesGet.php?fecha=" + encodeURIComponent(fecha), true);
+    xhr.onreadystatechange = function () {
+
+        if (xhr.readyState === 4 && xhr.status === 200) {
+
+            var data = JSON.parse(xhr.responseText);
+            var dinamic = document.getElementById("dinamic");
+            var html = "";
+
+            for (var i = 0; i < data.length; i++) {
+                var viajes = data[i];
+
+                html +=
+                    '<button class="viajeBox">' + 
+                        '<h3>' + viajes.placa + '</h3>' +
+                        '<h3>' + viajes.chofer1 + '</h3>' +
+                        '<h3>' + viajes.destino + '</h3>' +
+                    '</button>';
+            }
+
+            dinamic.innerHTML = html;
+        }
+    };
+
+    xhr.send();
 }
 
 function getFecha() {
@@ -23,5 +49,5 @@ function getFecha() {
     }
     var anio = hoy.getFullYear();
 
-    return dia + "-" + mes + "-" + anio;
+    return anio + "-" + mes + "-" + dia;
 }

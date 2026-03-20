@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NUEVO VIAJE - MONTERO</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header id="menu">
+        <img src="img/logoX.png" alt="Logo">
+        <div>
+            <button onclick="goMenu()">Menu</button>
+            <button onclick="goFlotas()">Flota</button>
+        </div>
+    </header>
+    <main>
+        <div> 
+            <h1>NUEVO VIAJE</h1>
+
+            <div id="dinamic">
+            
+                <label for="flotasSel">Placa:
+                    <select id="flotasSel" name="placa"></select>
+                </label>
+                
+            
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino">
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="La Paz">La Paz</option>
+                    <option value="Yacuiba">Yacuiba</option>
+                </select>
+            
+                <label for="carril">Carril:
+                    <input type="number" id="carril" name="carril">
+                </label>
+            
+                <label for="hora_salida">Hora salida:
+                    <input type="text" id="hora_salida" name="hora_salida">
+                </label>
+
+                <label for="ayudante">Ayudante:
+                    <input type="number" id="ayudante" name="ayudante">
+                </label>
+
+                <label for="fecha">Fecha:
+                    <input type="number" id="fecha" name="fecha">
+                </label>
+                
+            </div>
+        </div>
+        <div id="btns">
+            <button onclick="goMenu()">Atras</button>
+            <button onclick="newViaje()">Nuevo Viaje</button>
+        </div>
+    </main>
+
+    <script src="js/viajes.js"></script>
+    <script src="js/linker.js"></script>
+</body>
+</html>
