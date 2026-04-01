@@ -302,17 +302,23 @@ main:after {
   padding: 1em;
   border-radius: 1em;
   background-color: #949ba4;
+  overflow-y: auto;
   width: auto;
   height: 100px;
 }
 
 .header_din {
   background-color: #2b2d31;
+  width: 100%;
   display: -moz-box;
   padding: 0.5em;
   border-radius: 1em;
 }
 
 .header_din h2 {
+  float: left;
+  width: 14.28%;
+  text-align: center;
+  font-size: 1.1em;
   color: #f2f3f5;
 }

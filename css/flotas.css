@@ -1,4 +1,3 @@
-/* Contenedor principal para dar márgenes internos */
 .contenedor-flotas {
   padding: 2em;
   -moz-box-sizing: border-box;
@@ -7,7 +6,7 @@
 
 .contenedor-flotas h1 {
   margin-bottom: 20px;
-  color: #23a559; /* Título en verde para destacar */
+  color: #23a559;
   border-bottom: 2px solid #2b2d31;
   padding-bottom: 10px;
 }
@@ -16,10 +15,9 @@
 .cabecera-tabla {
   background-color: #111214;
   padding: 12px 0;
-  border-radius: 5px 5px 0 0; /* Bordes redondeados solo arriba */
   border: 2px solid #2b2d31;
   border-bottom: none;
-  overflow: hidden; /* Limpia los flotados internos */
+  overflow: hidden;
 }
 
 /* Dividimos las 7 columnas matemáticamente (100% / 7 = 14.28%) */
