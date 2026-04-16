@@ -14,39 +14,32 @@
         <button onclick="goFlotas()">Flota</button>
       </div>
     </header>
-    <main>
-      <div>
-        <h1>FLOTAS</h1>
-        <div class="header_din">
-          <h2>PLACA</h2>
-          <h2>CHOFER 1</h2>
-          <h2>LICENCIA 1</h2>
-          <h2>CHOFER 2</h2>
-          <h2>LICENCIA 2</h2>
-          <h2>ASIENTOS</h2>
-          <h2>TIPO</h2>
-        </div>
-        <div id="dinamic"></div>
-      </div>
-      <div id="btns">
-        <button>Nueva Flota</button>
 
-        <button>Editar Flota</button>
+    <main class="contenedor-flotas">
+      <h1>FLOTAS</h1>
+
+      <div class="panel-principal">
+        <div class="tabla-flotas">
+          <div class="header_din">
+            <h2>PLACA</h2>
+            <h2>CHOFER 1</h2>
+            <h2>LICENCIA 1</h2>
+            <h2>CHOFER 2</h2>
+            <h2>LICENCIA 2</h2>
+            <h2>ASIENTOS</h2>
+            <h2>TIPO</h2>
+          </div>
+          <div id="dinamic"></div>
+        </div>
+
+        <div id="btns">
+          <button>Nueva Flota</button>
+          <button>Editar Flota</button>
+        </div>
       </div>
     </main>
 
     <script src="js/flotas.js"></script>
     <script src="js/linker.js"></script>
-    <script src="js/components/componente_fecha.js"></script>
-    <script>
-      window.onload = function () {
-        SelectorFecha.renderizar("contenedor-fechas");
-
-        document.getElementById("buscar").onclick = function () {
-          var fechaLista = SelectorFecha.obtenerFechaFormateada();
-          alert("La fecha seleccionada es: " + fechaLista);
-        };
-      };
-    </script>
   </body>
 </html>
